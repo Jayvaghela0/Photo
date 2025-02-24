@@ -3,8 +3,9 @@ Flask-Cors==4.0.0
 opencv-python==4.8.0.76
 torch==2.0.1
 torchvision==0.15.2
-basicsr==1.4.2
+basicsr>=1.4.2
+facexlib>=0.2.5
 realesrgan==0.3.0
 numpy==1.24.3
 Pillow==10.0.0
-gunicorn==20.1.0  # Required for deployment on Heroku
+gunicorn==20.1.0
