@@ -1,14 +1,15 @@
 # realesrgan/realesrganer.py
 class RealESRGANer:
-    def __init__(self, model_path=None, scale=4):
+    def __init__(self, model=None, model_path=None, scale=4):
         """
         Initialize the RealESRGANer.
 
         Args:
+            model (str): Path to the pre-trained model (alternative to model_path).
             model_path (str): Path to the pre-trained model.
             scale (int): Scaling factor for super-resolution.
         """
-        self.model_path = model_path
+        self.model_path = model if model is not None else model_path
         self.scale = scale
         # Load model and other initializations here
 
